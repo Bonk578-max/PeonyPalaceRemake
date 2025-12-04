@@ -1,0 +1,95 @@
+/* menu-style.css */
+@import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+
+:root{
+  --bg: #1b1b1b;
+  --text: #fff;
+  --maxw: 900px;
+}
+
+*{box-sizing: border-box}
+
+html,body{
+  height:100%;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Jaini", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:48px 24px;
+  text-align:center;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+/* Title */
+.title{
+  font-size:36px;
+  margin:0 0 28px 0;
+}
+
+/* Items list - center aligned vertical stack */
+.menu-items{
+  width:100%;
+  font-size:18px;
+  line-height:1.8;
+  white-space:pre-line;
+  text-align:center;
+}
+
+.menu-items p{ margin:12px 0;}
+
+/* Back button */
+.back-button{
+  display:inline-block;
+  margin-top:36px;
+  padding:12px 28px;
+  border:1px solid #fff;
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:18px;
+  transition:all .18s ease;
+}
+.back-button:hover{
+  background:#fff;
+  color:#000;
+  transform:translateY(-2px);
+}
+
+/* Main menu grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  width:100%;
+  margin-top:18px;
+}
+.card{
+  background:rgba(255,255,255,0.04);
+  padding:18px;
+  border-radius:10px;
+  cursor:pointer;
+  text-decoration:none;
+  color:inherit;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.card h3{ margin:0 0 8px 0; font-size:20px;}
+.card p{ margin:0; font-size:14px; opacity:0.9;}
+.card:hover{ transform:translateY(-6px); box-shadow:0 8px 18px rgba(0,0,0,0.6);}
+
+/* Responsive tweaks */
+@media (max-width:600px){
+  .title{ font-size:28px; }
+  .menu-items{ font-size:16px; }
+  .back-button{ font-size:16px; padding:10px 20px; }
+}
