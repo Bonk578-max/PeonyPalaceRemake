@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,29 +11,48 @@
 
 <body class="body">
     <!--Nav Bar-->
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <div class="headerGrid">
-                <div class="row">
-                    <img class="HeaderImgCenter" src="./ll.png" alt=" logo for page">
-
-                </div>
-                <div class="row ">
-                    <div class="colum ">
-                    <button><H1>Home</H1></button>
-                </div>
-                <div class="colum">
-                    <button><H1>Menu</H1></button>
-                </div>
-                <div class="colum">
-                    <button><H1>Contact Us</H1></button>
-                </div>
-                </div>
-
-
+    <div class=" d-flex justify-content-center Navcolor">
+        <div class="row">
+            <div class="col">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                  <img src="./ll.png" alt="logo" width="700">
+                </a>
             </div>
+
         </div>
-    </nav>
+        
+    </div>
+    <nav class="navbar navbar-expand-lg Navcolor">
+        <div class="container-fluid">
+            
+            
+            <!-- Hamburger for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                
+                <li class="nav-item mx-3">
+                    <a class="nav-link " href="#"><h1 class="Buttons HeaderButtons">Home</h1></a>
+                </li>
+                
+                <li class="nav-item mx-3">
+                    <a class="nav-link HeaderButtons" href="#"><h1 class="Buttons HeaderButtons">Menu</h1></a>
+                </li>
+
+                <li class="nav-item mx-3">
+                    <a class="nav-link HeaderButtons" href="#"><h1 class="Buttons HeaderButtons">Contact Us</h1></a>
+                </li>
+            </ul>
+    </div>
+  </div>
+</nav>
+
+
 
 
 
