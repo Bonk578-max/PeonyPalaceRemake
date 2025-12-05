@@ -13,9 +13,48 @@
 .Buttons{
     color: white;
             font-size: 3.5rem;
+                    -webkit-text-stroke: 2.5px black;
   font-family: 'Jaini';
   font-style: normal;
   font-weight: 400;
 }
+.CoolText{
+    color: white;
+            font-size: 2.5rem;
+  font-family: 'Jaini';
+  font-style: normal;
+  font-weight: 400;
+}
+.width{
+    width: 350px;
+}
 
 
+.Smalltext{
+        color: white;
+        -webkit-text-stroke: 2px black;
+            font-size: 3.1rem;
+  font-family: 'Jaini';
+  font-style: normal;
+  font-weight: 300;
+}
+.TryFoodCard{
+    background-color: rgb(61, 61, 61);
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px;
+    gap: 30px;
+}
+.buttononPage{
+        border-style: solid;
+    border-width: 4px;
+    border-color:black;
+    background-color: rgb(179, 179, 179);
+    font-size: 3.5rem;
+    color: white;
+                      -webkit-text-stroke: 2.5px black;
+  font-family: 'Jaini';
+  font-style: normal;
+  font-weight: 400;
+    
+}
