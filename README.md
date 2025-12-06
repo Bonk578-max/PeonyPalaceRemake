@@ -12,4 +12,5 @@ Project Name- "Business Redesign" AKA "BR"
 -Brief Description, We recreated a site from a place in elk grove called Peony Palace, that serves Mongolian BBQ.
 
 -peer review- "Brandon Vanhorn" - "Typehere"
--||||||||||||||||||||||||-
+
+-Could use some work mianly js ins tlinked in some pages but otherwise looks good
